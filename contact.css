@@ -99,12 +99,14 @@
 
 .hero-left img {
     border-radius: 5%;
+    width: 100%;
+    height: auto;
 }
 
 .hero-right {
     font-family: 'Signika', sans-serif;
     padding-top: 20%;
-    padding-bottom: 20%;
     font-size: x-large;
+    padding-left: 50px;
 }
 /*===============*/
