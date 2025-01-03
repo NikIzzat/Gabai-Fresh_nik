@@ -98,7 +98,7 @@
 .hero-segment-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
 }
 
 .hero-left {
@@ -110,6 +110,12 @@
 
 .hero-right{
     animation: fadeIn 1.5s;
+}
+
+.hero-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;    
 }
 
 @keyframes fadeIn {
