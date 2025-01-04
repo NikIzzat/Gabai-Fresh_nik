@@ -93,12 +93,14 @@
     padding: 50px 70px;
     background: url(stocks/farm-pics-background.jpg) no-repeat center center;
     background-size: cover;
+    
 }
 
 .hero-segment-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    grid-template-areas: "left right";
 }
 
 .hero-left {
@@ -106,16 +108,21 @@
     padding-top: 20%;
     padding-bottom: 20%;
     font-size: x-large;
+    grid-area: left;
+}
+
+.price-text{
+    padding-top: 100px;
 }
 
 .hero-right{
-    animation: fadeIn 1.5s;
+    grid-area: right;
 }
-
 .hero-right img {
     width: 100%;
     height: auto;
-    border-radius: 5%;    
+    border-radius: 5%;
+    animation: fadeIn 1.5s;
 }
 
 @keyframes fadeIn {
@@ -138,6 +145,7 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .buttonbuy {
@@ -151,3 +159,29 @@
     color: rgb(0, 0, 0);
 }
 /*===============*/
+
+@media (max-width:800px) {
+    .hero-segment-grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "right"
+        "left";
+    }
+
+    .hero-left{
+        padding: 0;
+    }
+
+    .hero-left h1{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .hero-left p{
+        font-size: 20px;
+    }
+
+    .price-text{
+        padding-top: 30px;
+    }
+}
