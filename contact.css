@@ -95,6 +95,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    align-items: center; 
 }
 
 .hero-left img {
@@ -105,8 +106,85 @@
 
 .hero-right {
     font-family: 'Signika', sans-serif;
-    padding-top: 20%;
-    font-size: x-large;
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    text-align: center;
 }
 /*===============*/
+
+/* Responsive*/
+@media (min-width: 320px) {
+    .hero-segment {
+        padding: 20px 10px;
+    }
+
+    .hero-segment-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-right {
+        font-size: small;
+    }
+
+    .hero-left img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-segment {
+        padding: 40px 20px;
+    }
+
+    .hero-segment-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .hero-right {
+        font-size: medium;
+    }
+
+    .hero-left img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-segment {
+        padding: 50px 50px;
+    }
+
+    .hero-right {
+        font-size: large;
+    }
+
+    .hero-left img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1220px) {
+    .hero-segment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-segment {
+        padding: 60px 100px;
+    }
+
+    .hero-right {
+        font-size: x-large;
+    }
+
+    .hero-left img {
+        width: 100%;
+    }
+}
