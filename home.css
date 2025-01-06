@@ -121,6 +121,7 @@
 
 .about-products-left img {
     border-radius: 7.5%;
+    width: 100%;
 }
 
 .about-products-right h1 {
@@ -133,6 +134,28 @@
     font-family: 'Open Sans', sans-serif;
     text-indent: 40px;
     font-size: medium;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-products-segment {
+        display: block;
+    }
+
+    .about-products-left img {
+        border-radius: 7.5%;
+    }
+    
+    .about-products-right h1 {
+        font-family: 'Signika', sans-serif;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .about-products-right p {
+        font-family: 'Open Sans', sans-serif;
+        text-indent: 40px;
+        font-size: medium;
+    }
 }
 /*===============*/
 
@@ -222,5 +245,46 @@
     border-radius: 2.5%;
     width: 100%;
     height: auto;
+}
+/*===============*/
+
+/*map segment*/
+.map-segment {
+    display: block;
+    background-color: rgb(0, 0, 0);
+}
+
+.map-title {
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 150%;
+    color: rgb(198, 198, 198);
+}
+
+.map-content {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.map-address {
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 200%;
+    color: rgb(198, 198, 198);
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+
+#map {
+    padding: 10%;
+    height: 300px;
+    display: none;
 }
 /*===============*/

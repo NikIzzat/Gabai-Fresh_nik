@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="jquery-3.7.1.min.js"></script>
+
+    <!--Leaflet for Openstreet map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!------------------------------>
 </head>
 
 <body>
@@ -111,6 +116,22 @@
             <img src="stocks/farm-pics-2.jpg" alt="">
         </div>
     </div>
+    <div class="map-segment"> 
+        <div class="map-title"> 
+            <h1>Our Farm Location </h1>
+        </div>
+        <div class="map-content">
+            <div id="map"></div>
+        </div>
+        <div class="map-address">
+            <p>
+                Address: No. 3, PT 8884, Kg. Gabai, Sg. Lui, 43100 Hulu Langat, Selangor Darul Ehsan.
+            </p>
+            <br>
+            <p>latitude: 3.162000, longitude: 101.899353;</p>
+        </div>
+    </div>
+    <script src="farmlocation.js"></script>
     <script src="gabaifresh.js"></script>
 </body>
 
